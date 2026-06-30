@@ -54,7 +54,7 @@ real Matrix4::getDeterminant() const
 void Matrix4::setInverse(const Matrix4 &m)
 {
     // Make sure the determinant is non-zero.
-    real det = getDeterminant();
+    real det = m.getDeterminant();
     if (det == 0) return;
     det = ((real)1.0)/det;
 
